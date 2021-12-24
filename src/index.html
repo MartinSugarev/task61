@@ -8,11 +8,7 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      .fire-emoji{
-        display: inline;
-      }
-    </style>
+   
   </head>
   <body>
     <div class="main">
@@ -95,28 +91,14 @@
       </div>
     </div>
     <script>
-      let b = document.body
-      let m = b.querySelectorAll(".card");
+   
+      let content = document.querySelectorAll("p.subtitle.is-6.price.hot"); 
+         for(let i = 0; i < content.length; i++){
+          let price = content[i].innerHTML;
+          content[i].innerHTML = price + ' ' + '&#128293'
+         }
       
-      for(let i = 0; i < m.length; i++){
-        let content = m[i].querySelector("div.media-content > p.subtitle.is-6.price.hot");
-       // console.log(content[0].querySelector("p .subtitle is-6 price"));
-        if(content !== null){
-            let price = content.innerHTML;
-            //el.setAttribute("class", "fire-emoji")
-            content.innerHTML = price + " " + "&#128293";
-           // content.appendChild(el)
-        }
-        
-        //let c = content[1].querySelectorAll("p.subtitle is-6 price")
-       // console.log(content[0].querySelector(".subtitle is-6 price hot"));
-       // if(content[1].querySelector("p.subtitle is-6 price")){
-       //   console.log(m[i])
-       // }else{
-       //   console.log('There is not such classs')
-       // }
-      }
-     //console.log(m);
+     
      
     </script>
   </body>
