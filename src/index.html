@@ -8,6 +8,11 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .fire-emoji{
+        display: inline;
+      }
+    </style>
   </head>
   <body>
     <div class="main">
@@ -98,6 +103,7 @@
        // console.log(content[0].querySelector("p .subtitle is-6 price"));
         if(content !== null){
             let el = document.createElement("p");
+            el.setAttribute("class", "fire-emoji")
             el.innerHTML = "&#128293";
             content.appendChild(el)
         }
