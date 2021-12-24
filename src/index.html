@@ -89,5 +89,29 @@
         </div>
       </div>
     </div>
+    <script>
+      let b = document.body
+      let m = b.querySelectorAll(".card");
+      
+      for(let i = 0; i < m.length; i++){
+        let content = m[i].querySelector("div.media-content > p.subtitle.is-6.price.hot");
+       // console.log(content[0].querySelector("p .subtitle is-6 price"));
+        if(content !== null){
+            let el = document.createElement("p");
+            el.innerHTML = "&#128293";
+            content.appendChild(el)
+        }
+        
+        //let c = content[1].querySelectorAll("p.subtitle is-6 price")
+       // console.log(content[0].querySelector(".subtitle is-6 price hot"));
+       // if(content[1].querySelector("p.subtitle is-6 price")){
+       //   console.log(m[i])
+       // }else{
+       //   console.log('There is not such classs')
+       // }
+      }
+     //console.log(m);
+     
+    </script>
   </body>
 </html>
