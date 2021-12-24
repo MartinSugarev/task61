@@ -102,10 +102,10 @@
         let content = m[i].querySelector("div.media-content > p.subtitle.is-6.price.hot");
        // console.log(content[0].querySelector("p .subtitle is-6 price"));
         if(content !== null){
-            let el = document.createElement("p");
-            el.setAttribute("class", "fire-emoji")
-            el.innerHTML = "&#128293";
-            content.appendChild(el)
+            let price = content.innerHTML;
+            //el.setAttribute("class", "fire-emoji")
+            content.innerHTML = price + " " + "&#128293";
+           // content.appendChild(el)
         }
         
         //let c = content[1].querySelectorAll("p.subtitle is-6 price")
