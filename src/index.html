@@ -8,7 +8,7 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-   
+   <script type="module" src="./js/app.js" ></script>
   </head>
   <body>
     <div class="main">
@@ -90,16 +90,5 @@
         </div>
       </div>
     </div>
-    <script>
-   
-      let content = document.querySelectorAll("p.subtitle.is-6.price.hot"); 
-         for(let i = 0; i < content.length; i++){
-          let price = content[i].innerHTML;
-          content[i].innerHTML = price + ' ' + '&#128293'
-         }
-      
-     
-     
-    </script>
   </body>
 </html>
